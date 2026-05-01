@@ -98,9 +98,9 @@ h1{
     color: rgba(0, 0, 0, 0.596);
     font-size: 50px;
 }
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 430px){
     .login{
-        width: 380px;
+        width: 370px;
     }
     .login h4{
         font-size: 15px;
