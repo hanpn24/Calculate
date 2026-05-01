@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6c6c6c28;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+}
+
+.logo img {
+    width: 250px;
+    /* chỉnh to nhỏ ở đây */
+    height: auto;
+}
+.login{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px, solid, black;
+    border: none;
+    box-shadow: inset 0px 3px 15px #01000079;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    /* box-shadow:  0px 8px 32px rgba(0, 0, 0, 0.288); */
+    box-shadow:
+                inset 2px 2px 4px rgba(255,255,255,0.9),
+                inset -3px -3px 5px rgba(0,0,0,0.08),
+                3px 3px 8px rgba(0,0,0,0.12);
+    
+}
+input {
+    width: 300px;
+    height: 35px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    margin-top: 30px;
+    color: #8A8C8D;
+    background: #eef1f1;
+    /* background: transparent; */
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow:
+                12px 12px 5px rgba(0,0,0,0.18),
+                -10px -10px 20px rgba(255,255,255,0.9);
+    /* box-shadow: inset -10px -10px 25px 0 #FFFFFF 90%;
+    box-shadow: inset 4px 4px 8px #5e5e5e01; */
+
+    cursor: pointer;
+    outline: none;
+    /* loại bỏ viền khi nhập input */
+}
+input::placeholder{
+    font-size: 20px;
+    text-align: left;
+
+}
+button{
+    margin: 25px;
+    display: block;  /* dễ căn giữa cho "book now" biến phần tử thành một "khối" riêng, chiếm một dòng. */
+    width: 300px;
+    padding: 14px;
+    border: none;
+    border-radius: 20px;
+    background: #8c8c8cb1;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    background: #3f3f3e;
+    color: #ffffff;
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.596);
+    font-size: 50px;
+}
+@media only screen and (max-width: 426px){
+    .login{
+        width: 400px;
+    }
+}
