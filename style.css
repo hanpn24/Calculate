@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e2d7eb;
+    overflow-x: hidden;
+    position: relative;
+
+    /* background: linear-gradient(#420D19, #F6BAD6, #F1D3DF, #792b3c); */
+}
+
+.logo {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+}
+
+.logo img {
+    width: 250px;
+    /* chỉnh to nhỏ ở đây */
+    height: auto;
+}
+
+.calculate {
+    border: 1px, solid, #00000000;
+    border-radius: 16px;
+    padding: 20px;
+    background: #F9F9F9;
+    box-shadow: 0px 3px 15px #01000079;
+}
+
+input {
+    width: 320px;
+    height: 80px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    margin-top: 30px;
+    color: #8A8C8D;
+    background: #EDF3F3;
+    /* background: transparent; */
+    font-size: 40px;
+    text-align: right;
+    border-radius: 50px;
+    box-shadow: 3px 0px 15px #00000034;
+    cursor: pointer;
+    outline: none;
+    /* loại bỏ viền khi nhập input */
+}
+
+input::placeholder {
+    color: #8A8C8D
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #EDF3F3;
+    color: rgba(8, 8, 8, 0.781);
+    font-size: 20px;
+    box-shadow: 5px 0px 5px #00000027;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #dda1af;
+    color: #ffffff;
+}
+
+.equalBtn {
+    background: #D5AEC8;
+    color: black;
+    width: 150px;
+    border-radius: 40px;
+
+}
+
+.operator {
+    color: black;
+    font-weight: bold
+}
+
+@media only screen and (min-width: 769px) {
+    .calculate{
+        width: 460px;
+        height: 680px;
+    }
+    input{
+        width: 400px;
+        height: 90px;
+    }
+    button{
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 426px){
+    .calculate{
+        margin-top: 30px;
+        width: 380px;
+        height: 570px;
+    }
+    input{
+        width: 300px;
+        height: 70px;
+    }
+    button{
+        width: 55px;
+        height: 55px;
+        margin: 10px;
+    }
+}
