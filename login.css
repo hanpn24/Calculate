@@ -102,4 +102,9 @@ h1{
     .login{
         width: 400px;
     }
+    .login h4{
+        font-size: 15px;
+        text-align: center;
+    }
+
 }
