@@ -100,7 +100,7 @@ h1{
 }
 @media only screen and (max-width: 426px){
     .login{
-        width: 400px;
+        width: 380px;
     }
     .login h4{
         font-size: 15px;
